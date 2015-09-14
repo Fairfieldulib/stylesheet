@@ -1,0 +1,50 @@
+.spotlight {
+  text-align: center;
+  border: 1px solid #DBDBDB;
+  box-shadow: 1px 5px 20px #DBDBDB;
+  margin-top:-5px;
+  color: #404040;
+  height:215px;
+}
+.spotlight:hover {
+  border: 1px solid #404040;
+}
+.spotlight:hover p:not(:empty){
+  background: #2f8393;
+  color: #ffffff;
+}
+.spotlight a:hover{
+  text-decoration:none;
+}
+.spotlight:hover .image{
+  opacity: 1;
+}
+.spotlight .image {
+  height:213px;
+  opacity: 0.75;
+  background-size:cover;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+}
+.spotlight h3 {
+  color: #c8102e;
+  line-height: 1;
+  padding: .3em 1em;
+  text-transform: uppercase;
+  margin:0;
+}
+.spotlight p:empty {
+  display:none; 
+}
+.spotlight p:not(:empty) {
+  position:absolute;
+  bottom: 1px;
+  font-size: 150%;
+  left: 16px;
+  right:16px;
+  margin: 0;
+  padding: .2em 1em;
+  color:#404040;
+  background: #fbfbfb;
+  height:60px;
+}

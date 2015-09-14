@@ -1,0 +1,57 @@
+#lib-breadcrumb {
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,0.35);
+  display: inline-block;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#lib-breadcrumb a {
+  background: white;
+  color: black;
+  display: block;
+  float: left;
+  line-height: 36px;
+  outline: none;
+  padding: 0 10px 0 30px;
+  position: relative;
+  text-decoration: none;
+  transition: all .5s;
+}
+#lib-breadcrumb a:after {
+  -ms-transform: scale(0.707) rotate(45deg);
+  -webkit-transform: scale(0.707) rotate(45deg);
+  background: white;
+  border-radius: 0 5px 0 50px;
+  box-shadow: 2px -2px 0 2px rgba(0,0,0,0.4), 3px -3px 0 2px rgba(255,255,255,0.1);
+  color: black;
+  content: '';
+  height: 36px;
+  position: absolute;
+  right: -18px;
+  top: 0;
+  transform: scale(0.707) rotate(45deg);
+  transition: all .5s;
+  width: 36px;
+  z-index: 1;
+}
+#lib-breadcrumb a:first-child {
+  border-radius: 0 0 0 5px;
+  padding-left: 46px;
+}
+#lib-breadcrumb a:first-child:before {
+  left: 14px;
+}
+#lib-breadcrumb a:last-child {
+  padding-right: 20px;
+}
+#lib-breadcrumb a:last-child:after {
+  content: none;
+  height: 0;
+  width: 0;
+}
+#lib-breadcrumb a:hover,#lib-breadcrumb a:hover:after,#lib-breadcrumb a:last-child {
+  background: #2F8393;
+  color: white;
+}

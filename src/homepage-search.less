@@ -1,0 +1,122 @@
+.top-search-bar{
+  color: #000000;
+  font-weight:bold;
+  padding: 40px 0;
+  background:transparent 50% 50% no-repeat;
+}
+.top-search-bar > .row{
+  background: #fbfbfb;
+  border: 1px solid #DBDBDB;
+  box-shadow: 1px 5px 20px #DBDBDB;
+  padding: 10px 0;
+  max-width: 1380px;
+}
+.top-search-bar h2{
+  font-weight:400;
+}
+.top-search-bar form {
+  padding: 20px;
+}
+.top-search-bar .checkbox {
+  margin: 0 35px 0 0;
+  padding: 0;
+}
+.top-search-bar input[type="search"] {
+  border-radius: 0;
+  float: left;
+  height: 40px;
+  margin-bottom: 5px;
+  width: 80%;
+  border: 1px solid #2f8393;
+}
+.top-search-bar select ~ input[type="search"] {
+  width: 50%;
+}
+.top-search-bar select {
+  border-radius: 0;
+  border-right: 0;
+  float: left;
+  height: 40px;
+  margin-bottom: 0;
+  width: 30%;
+  border: 1px solid #2f8393;
+  border-right: 0;
+}
+.top-search-bar button {
+  border-radius: 0;
+  float: right;
+  height: 40px;
+  padding: 0;
+  width: 20%;
+  margin-bottom: 5px;
+}
+#search-tabs .tab-content {
+  border: 1px solid #888;
+  box-shadow: 1px 5px 20px #DBDBDB;
+  overflow: inherit;
+  padding: 10px;
+  margin-left:1px;
+}
+#search-tabs ul {
+  border: 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 5px 0 0;
+}
+#search-tabs ul li {
+  border-left: 1px solid #888888;
+  border-top: 1px solid #888888;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: -1px;
+}
+#search-tabs ul li:last-of-type {
+  border-right: 1px solid #888888;
+}
+#search-tabs li a {
+  background: #dddddd;
+  border: 0!important;
+  border-radius: 0;
+  color: #000000;
+  font-size: 120%;
+  margin-right: 0;
+  padding: 5px 20px;
+  text-align: center;
+  width: 100%;
+}
+#search-tabs li.active {
+  border-bottom: 1px solid #880B1F;
+  position:relative;
+}
+#search-tabs li:hover a,#search-tabs li a:focus{
+  color: #AE0E28;
+}
+#search-tabs li.active:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 11, 31, 0);
+  border-top-color: #880B1F;
+  border-width: 15px;
+  margin-left: -15px;
+}
+#search-tabs li.active a {
+  background: #880B1F;
+  color: #ffffff;
+  transition: background 0;
+}
+.more-search {
+  background: #F9F2E8;
+  border: 1px solid #DBDBDB;
+  border-top: 0;
+  margin-bottom: 5px;
+  max-width: 550px;
+  padding: 5px;
+}
