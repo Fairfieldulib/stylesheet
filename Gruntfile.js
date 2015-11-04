@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
       dist: {
-        src: ['src/fairfield-style-6-9-15.less', 'src/variables.less','src/**/*.less'],
+        src: ['src/fairfield-style-6-9-15.less', 'src/variables.less','src/**/*.less', '!src/max-width-480px.less', 'src/max-width-480px.less'],
         dest: 'tmp/<%= pkg.name %>.less'
       }
     },
